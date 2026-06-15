@@ -27,7 +27,7 @@ public class Aufgabe5 {
 
         int [] lotto = new int[6];
         int [] lottoZahlen = new int[38];
-        int randomZahl ;
+        int randomZahl, set=6;
         Random rand = new Random();
 
         //Array mit allen Zahlen
@@ -35,16 +35,23 @@ public class Aufgabe5 {
             lottoZahlen[i-1] = i;
         }
 
-        for(int i = 0; i < 6; i++){
-            randomZahl = rand.nextInt(1, 39);
+        //randomZahl von 1 bis 38 x6
+        for(int i = 0; i < set; i++){
+            randomZahl = rand.nextInt(1,39);
             System.out.println(randomZahl);
 
-            for(int j = 0; j < 39; j++){
-               if
-           }
+            for(int j = 0; j < 38 ; j++){
+                if(randomZahl == lottoZahlen[j]){
+                    lotto[i] = randomZahl;
+                    lottoZahlen[j] = lottoZahlen[j] -randomZahl;
+                }
+            }
+            if(lotto[i] == 0){
+                set--;
+            }else{
+                System.out.println(Arrays.toString(lotto));
+                System.out.println(Arrays.toString(lottoZahlen));
+            }
         }
-        System.out.println(Arrays.toString(lottoZahlen));
-
-
     }
 }
