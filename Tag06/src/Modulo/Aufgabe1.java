@@ -14,47 +14,47 @@ package Modulo;
 
 import java.util.Random;
 
-/**   Pseudocode
-   program Aufgabe1
-
- {
-
- int wurfel
- int summe 0
- int sechs 0
- int worfen [] new int [20]
- Random rand
-
- for(i = 0, i < 20, i++)
-      wurfel = random(1 bis 6)
-      worfen[i] = wurfel
-      summe += wurfel
-      if(worfen[i] == 6)
-              sechs++;
-      endif
- endfor
-
- Ausgabe worfen[] + summe + sechs
-
- }
-
+/**
+ * Pseudocode
+ * program Aufgabe1
+ * <p>
+ * {
+ * <p>
+ * int wurfel
+ * int summe 0
+ * int sechs 0
+ * int worfen [] new int [20]
+ * Random rand
+ * <p>
+ * for(i = 0, i < 20, i++)
+ * wurfel = random(1 bis 6)
+ * worfen[i] = wurfel
+ * summe += wurfel
+ * if(worfen[i] == 6)
+ * sechs++;
+ * endif
+ * endfor
+ * <p>
+ * Ausgabe worfen[] + summe + sechs
+ * <p>
+ * }
  */
 
 public class Aufgabe1 {
     public static void main(String[] args) {
 
         //Variablen
-        int wurfel, summe = 0,sechs = 0;
+        int wurfel, summe = 0, sechs = 0;
         int worfen[] = new int[20];
         Random rand = new Random();
 
         System.out.print("worfen[] = "); //Ausgabe worfen[] =
 
-        for(int i = 0; i < 20; i++){
-            wurfel = rand.nextInt(1,6+1);
+        for (int i = 0; i < 20; i++) {
+            wurfel = rand.nextInt(1, 6 + 1);
             worfen[i] = wurfel;
-            summe = summe+wurfel;
-            if(worfen[i] == 6){
+            summe = summe + wurfel;
+            if (worfen[i] == 6) {
                 sechs++;
             }
             System.out.print(worfen[i] + " "); //Ausgabe wert von worfen[0] bis worfen[19]

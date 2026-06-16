@@ -15,35 +15,35 @@ Zeige die zufaellig erzeugten Zahlen an und zaehle die meisten freien Sitze nebe
 
 import java.util.Random;
 
-/**   Pseudocode
-  program Aufgabe4
-
-  {
-
-   int [] sitzreihe 45
-   int leer 0
-   int result 0
-   Random rand
-
-   for(0 bis 44)
-        sitzreihe[] = random(0 oder 1)
-   if sitzreihe[] == 0
-        leer++
-   else
-        if (leer > result)
-           result = leer
-           leer = 0
-        else
-           leer = 0
-        endif
-   endif
-   Ausgabe Stuhle i = sitzreihe[]
- endfor
- Check 44 0 war
- Ausgabe text freie platz + result
-
-  }
-
+/**
+ * Pseudocode
+ * program Aufgabe4
+ * <p>
+ * {
+ * <p>
+ * int [] sitzreihe 45
+ * int leer 0
+ * int result 0
+ * Random rand
+ * <p>
+ * for(0 bis 44)
+ * sitzreihe[] = random(0 oder 1)
+ * if sitzreihe[] == 0
+ * leer++
+ * else
+ * if (leer > result)
+ * result = leer
+ * leer = 0
+ * else
+ * leer = 0
+ * endif
+ * endif
+ * Ausgabe Stuhle i = sitzreihe[]
+ * endfor
+ * Check 44 0 war
+ * Ausgabe text freie platz + result
+ * <p>
+ * }
  */
 
 public class Aufgabe4 {

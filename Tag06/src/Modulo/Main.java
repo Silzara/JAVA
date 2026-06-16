@@ -1,7 +1,5 @@
 package Modulo;
 
-import java.lang.reflect.Array;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -40,13 +38,13 @@ public class Main {
         //wie "Kommt" man an einen messWert "ran" ?
 
         //zum Testen das Array mit Werten füllen
-        for(int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
 
-            messWerte[i] = i*2%3;
+            messWerte[i] = i * 2 % 3;
         }
 
-        for(int i = 0; i < 10; i++){
-            System.out.println("Messwerte[" + i + "] = " +messWerte[i]);
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Messwerte[" + i + "] = " + messWerte[i]);
         }
     }
 }
