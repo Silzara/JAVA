@@ -29,6 +29,7 @@ import java.util.Scanner;
 public class Aufgabe2 {
     public static void main(String[] args) {
 
+        //Variable
         double startKapital, zielKapital, zinssatz, kapital;
         int jahre = 0;
         Scanner sc = new Scanner(System.in);
@@ -50,5 +51,6 @@ public class Aufgabe2 {
 
         //Asugabe
         System.out.println("Es hat "+jahre+ " jahre gedauert");
+        sc.close();
     }
 }
