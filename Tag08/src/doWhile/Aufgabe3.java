@@ -35,7 +35,7 @@ import java.util.Scanner;
              else
                    Ausgabe text falsch
              endif
-     while(zahl < 6 && zahl > 0)>
+     while(zahl < 6 || zahl > 0)>
 
  }
 
@@ -46,7 +46,9 @@ public class Aufgabe3 {
 
         int zahl;
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Eingabe zahl von 1 bis 5");
+
         do {
             zahl = sc.nextInt();
 
@@ -62,8 +64,6 @@ public class Aufgabe3 {
                 System.out.println("fünf");
             } else
                 System.out.println("falsche eingabe!");
-
         }while(zahl < 1 || zahl > 5);
-
     }
 }
