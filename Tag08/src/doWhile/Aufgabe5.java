@@ -35,27 +35,27 @@ import java.util.Scanner;
 
  {
 
-   int zahl1, zahl2, ergebnis, zufallsoperator, ruchtig
+   int zahl1, zahl2, ergebnis, zufallsoperator, richtig
    int counter 0 gut 0
    char [] operator + - * / %
    Scanner sc
    Random rand
 
-       do
+       DO
            zahl1=random(1 bis 10)
            zahl2=random(1 bis 10)
            zufallsoperator=random(0 bis 5)
-                if (zufallsoperator == /)
+                IF (zufallsoperator == /)
                       while(zahl1 % zahl2 != 0)
                              zahl1=random(1 bis 10)
                              zahl2=random(1 bis 10)
                       endwhile
-                endif
+                ENDIF
 
                 Ausgabe text zahl1 + operator + zahl2 ?
                 Eingabe ergebnis sc
 
-                if(zufallsoperator = + && ergebnis == zahl1+zahl2)
+                IF(zufallsoperator = + && ergebnis == zahl1+zahl2)
                         Ausgabe Prima
                         gut++
                 else if(zufallsoperator = - && ergebnis == zahl1-zahl2)
@@ -71,7 +71,7 @@ import java.util.Scanner;
                         Ausgabe Prima
                         gut++
                 else
-                     if(zufallsoperator = +)
+                     IF(zufallsoperator = +)
                             richtig = zahl1 + zahl2
                      else if(zufallsoperator = -)
                             richtig = zahl1 - zahl2
@@ -81,11 +81,13 @@ import java.util.Scanner;
                             richtig = zahl1 / zahl2
                      else
                             richtig = zahl1 % zahl2
-                     endif
+                     ENDIF
+
                 Ausgabe text falsch + richtig
-                endif
+                ENDIF
+
                 counter++
-       while(counter < 5)
+       WHILE(counter < 5)
        Ausgabe wie viele richtig +gut
  }
 
