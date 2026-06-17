@@ -120,6 +120,7 @@ public class Aufgabe5 {
             System.out.println("Wie viel ist " + zahl1 + " " + (operator[zufallsoperator]) + " " + zahl2 + " ?");
             ergebnis = sc.nextInt();
 
+            //zufallsoperator  | 0 ist + || 1 ist - || 2 ist * || 3 ist / || 4 ist % |
                 if (zufallsoperator == 0  && ergebnis == zahl1+zahl2 ) {
                     System.out.println("Prima");
                     gut++;
