@@ -45,6 +45,7 @@ import java.util.Random;
              summe += geheimWerte[j]
          ENDFOR
      Ausgabe text summe
+
  }
 
  */
