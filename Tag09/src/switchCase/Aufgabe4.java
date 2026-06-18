@@ -19,13 +19,32 @@ Geben Sie diese Summe aus.
 	- anschliessend ein lauffaehiges JAVA Programm
  */
 
+import java.util.Random;
+
 /**   Pseudocode
    program Aufgabe4
 
  {
 
+     int [] geheimeWerte 500
+     int randZahl 0, summe 0
+     Random rand
 
+     FOR(i 0 bis 500)
+         geheimeWerte[i] = i+1
+     ENDFOR
 
+     geheimeWerte[rand(0, 500)] = -999
+
+         FOR(x 0 bis 500)
+              randZahl = x;
+              break;
+         ENDFOR
+
+         FOR(j randZahl+1 bis 500)
+             summe += geheimWerte[j]
+         ENDFOR
+     Ausgabe text summe
  }
 
  */
@@ -33,5 +52,29 @@ Geben Sie diese Summe aus.
 public class Aufgabe4 {
     public static void main(String[] args) {
 
+    int [] geheimeWerte = new int[500];
+    int  randZahl =0, summe=0;
+    Random rand = new Random();
+
+        //Array mit positiven Zahlen füllen
+        for(int i = 0; i < 500; i++){
+            geheimeWerte[i] = i+1;
+        }// 1 bis 500
+
+    geheimeWerte[rand.nextInt(0,500)] = -999;
+
+        for(int x = 0; x < 500; x++){
+            if(geheimeWerte[x] == -999){
+                randZahl = x;
+                break;
+            }
+        }
+
+        for(int j = randZahl+1; j < 500; j++){
+            summe += geheimeWerte[j];
+        }
+
+        //Ausgabe
+    System.out.println("text "+summe);
     }
 }
