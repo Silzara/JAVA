@@ -9,11 +9,11 @@ public class Main2 {
 
         //Minimum wird ermittelt
         if(zahl1 <= zahl2){
-            minimum = zahl1;
+            return zahl1;
         }else{
-            minimum = zahl2;
+            return zahl2;
         }
-        return minimum;
+        //return minimum; //Verhalten wie ein break, nur es gibt zusätzlich was zurück
     }
     //****************************************************************
     public static void main(String[] args) {
