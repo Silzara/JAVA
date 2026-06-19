@@ -43,13 +43,14 @@ import java.util.Scanner;
 
 public class Aufgabe2 {
 
-    //Methode gesamtPreis()
+    //Methode gesamtPreis()  <- eingabe
     public static void gesamtPreis(double einzelpreis, double stuckzahl, double rabat){
-        System.out.printf("Gesamtpreis ist: %.02f\n",einzelpreis*stuckzahl*rabat);
+        //Ausgabe
+        System.out.printf("Gesamtpreis ist: %.02f\n",einzelpreis*stuckzahl*rabat/100);
 
-    }//end Methode gesamtPreis()
+    }//end Methode gesamtPreis()  -> ausgabe
 
-    //Start main()
+    //Start main()  eingabe->
     public static void main(String[] args) {
 
         double einzelpreis, stuckzahl, rabat;
@@ -60,7 +61,9 @@ public class Aufgabe2 {
         stuckzahl = sc.nextDouble();
         rabat = sc.nextDouble();
 
-        gesamtPreis(einzelpreis, stuckzahl, rabat);
+        gesamtPreis(einzelpreis, stuckzahl, 100-rabat); //Ausgabe
 
     }//end main()
 }
+// gut seo konnte besser sein
+// Langsam und nicht mobilfreundlich
