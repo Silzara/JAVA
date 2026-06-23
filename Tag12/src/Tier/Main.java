@@ -4,24 +4,34 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Katze katze1 = new Katze("Mauzi");
-        Hund hund1 = new Hund("Rex");
-        Piranha piranha1 = new Piranha("Hans");
+        //Katze katze1 = new Katze("Mauzi");
+        //Hund hund1 = new Hund("Rex");
+        //Piranha piranha1 = new Piranha("Hans");
 
+        //Polymorphie
+        //wir wollen mehrere Tiere, Objekte Tier erzeugen, von spezifischen Tierarten
+        //wir nutzen ein Array
 
-        katze1.gehorchen();
-        katze1.striecheln();
+        Tier[] tiere = new Tier[5];
 
-        hund1.gehorchen();
-        hund1.striecheln();
+        tiere[0] = new Katze("Mauzi");
+        tiere[1] = new Hund("Red");
+        tiere[2] = new Piranha("Zahnhans");
+        tiere[3] = new Piranha("Zahnbert");
+        tiere[4] = new Alpaka("Jack");
 
-        piranha1.gehorchen();
-        piranha1.striecheln();
+        Piranha bubbles = new Piranha("Bubbles");
 
+        for(int i = 0; i < 5; i++){
+            System.out.println(tiere[i].getTierart() + " mit dem Namen: " + tiere[i].getName());
+            tiere[i].gehorchen();
+            tiere[i].streicheln();
+            System.out.println();
+        }
 
-//        tier1.tierart = "Blauwall";
-//        System.out.println(tier1.getName() + " ist nun ein " + tier1.getTierart());
+        bubbles.bluebbern();
 
+        //tiere[1].
 
     }
 }

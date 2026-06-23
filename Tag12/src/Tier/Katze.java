@@ -16,7 +16,7 @@ public class Katze extends Tier{
     }
 
     @Override
-    public void striecheln() {
+    public void streicheln() {
         System.out.println(getName()    + " lässt sich gerne streicheln und schnurrt\n");
     }
 

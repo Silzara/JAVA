@@ -1,6 +1,6 @@
 package Tier;
 
-public class Hund extends Tier {
+public class Hund extends Tier implements Blubbern {
 
     //Konstruktor
     public Hund(String name) {
@@ -13,7 +13,12 @@ public class Hund extends Tier {
     }
 
     @Override
-    public void striecheln() {
+    public void streicheln() {
         System.out.println(getName() + " freut sich wie Bolle\n");
+    }
+
+    @Override
+    public void blubbern(){
+        System.out.println(getName() + " hält die Nase unter Wasser und blubbert");
     }
 }

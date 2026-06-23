@@ -1,11 +1,15 @@
 package Tier;
 
-public class Tier {
+public abstract class Tier {
 
     //folgende Idee:
     //wir haben Member();
     //Attribute: Namen, Tierart
     //Methoden: gehorchen, streicheln
+
+    //nach dem erstellen der Kklassen für Katze Hund usw
+    //möchten wir kein "Tier" mehr zulassen
+    //Tier soll nur noch ein "Bauplan" sein - aber es soll kein Objekt Tier mehr geben
 
     //Attribute
     private String name;
@@ -27,17 +31,8 @@ public class Tier {
         return tierart;
     }
 
-    public void gehorchen(){
-            System.out.println(getName() + " gehorcht.");
-    }
+    public abstract void gehorchen();
 
-    public void striecheln(){
-        if(tierart.equals("Piranha")){
-            System.out.println("ZehnFinger System bye bye");
-        }else{
-            System.out.println(getName() + " freut sich");
-        }
-
-    }
+    public abstract void streicheln();
 
 }
