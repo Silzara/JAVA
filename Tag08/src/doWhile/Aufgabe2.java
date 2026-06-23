@@ -15,7 +15,6 @@ bis er die korrekte Fläche eingab.
 	- anschliessend ein lauffaehiges JAVA Programm
  */
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**   Pseudocode

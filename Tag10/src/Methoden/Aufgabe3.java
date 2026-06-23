@@ -16,7 +16,6 @@ Im Hauptprogramm geben Sie das Ergebnis aus.
 	- anschliessend ein lauffaehiges JAVA Programm
  */
 
-import java.math.BigDecimal;
 import java.util.Scanner;
 
 /**   Pseudocode

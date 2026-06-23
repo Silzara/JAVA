@@ -1,11 +1,10 @@
 package Auto;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
 
+        /*   Konto Aufgabe
         Konto max = new Konto("Max Mustermann", 1000);
         max.zeigeKontostand();
         max.einzahlen(500);
@@ -14,22 +13,22 @@ public class Main {
         max.zeigeKontostand();
         max.auszahlen(2000);
         max.zeigeKontostand();
+         */
 
+        //man möchte Autos "simulieren" - sehr einfach
+        //zu einem Auto folgende Informationen:
+        //Marke
+        //Farbe
+        //Geschwindigkeit
+        //Tankinhalt
+        //mit normalen Variablen einfach unpraktisch
 
-//        //man möchte Autos "simulieren" - sehr einfach
-//        //zu einem Auto folgende Informationen:
-//        //Marke
-//        //Farbe
-//        //Geschwindigkeit
-//        //Tankinhalt
-//        //mit normalen Variablen einfach unpraktisch
-//
-//        //Konzept des Objektes wurde entwickelt
-//
-//        //Das Objekt Auto hat Variablen z.B. String marke
-//        //wir benötigen ein Klasse
-//
-//        //nun wollen wir ein Objekt der Klasse Auto erzeugen
+        //Konzept des Objektes wurde entwickelt
+
+        //Das Objekt Auto hat Variablen z.B. String marke
+        //wir benötigen ein Klasse
+
+        //nun wollen wir ein Objekt der Klasse Auto erzeugen
 //        //Variablen
 //        int eingabe = 0;
 //
@@ -52,5 +51,7 @@ public class Main {
 //            }
 //            auto1.status();
 //        } while (eingabe != 3);
+
+
     }
 }
