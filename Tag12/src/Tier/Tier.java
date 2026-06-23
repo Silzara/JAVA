@@ -28,11 +28,16 @@ public class Tier {
     }
 
     public void gehorchen(){
-        System.out.println(getName() + " gehorcht.");
+            System.out.println(getName() + " gehorcht.");
     }
 
     public void striecheln(){
-        System.out.println("Das Tier freut sich");
+        if(tierart.equals("Piranha")){
+            System.out.println("ZehnFinger System bye bye");
+        }else{
+            System.out.println(getName() + " freut sich");
+        }
+
     }
 
 }
