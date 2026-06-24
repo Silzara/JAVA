@@ -35,7 +35,7 @@ public class Main {
                         System.out.println("Ungültige Artikelnummer!");
                         break;
                     }
-                    System.out.println("Artikelnummer: "+artikel[artikelnummer]+ "erhöht mit Menge: "+bestand[artikelnummer]);
+                    System.out.println("Artikelnummer: "+artikel[artikelnummer]+ " erhöht mit Menge: "+bestand[artikelnummer]);
                     sc.nextLine();
                     break;
                 }
@@ -55,7 +55,7 @@ public class Main {
                         System.out.println("Ungültige Artikelnummer!");
                         break;
                     }
-                    System.out.println("Artikelnummer: "+artikel[artikelnummer]+ "verringert mit Menge: "+bestand[artikelnummer]);
+                    System.out.println("Artikelnummer: "+artikel[artikelnummer]+ " verringert mit Menge: "+menge);
                     sc.nextLine();
                     break;
                 }
