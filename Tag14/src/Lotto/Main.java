@@ -69,8 +69,8 @@ public class Main {
         long tries = 0, found;
 
         double tipp = 1.70;
-        int gewin = 500000000;
-        System.out.println(gewin);
+        //int gewin = 500000000;
+        //System.out.println(gewin);
 
         do {
             found =0;
