@@ -44,6 +44,18 @@ import java.util.Arrays;
           Ausgabe text winningLotto +tries
  }
 
+
+ Gewinnklasse	Anzahl Richtige	Gewinne	Quoten
+ 1	6 Richtige + SZ	0 ×	unbesetzt
+ 2	6 Richtige	   2 ×	2.234.452,70 €
+ 3	5 Richtige + SZ	43 ×	13.938,30 €
+ 4	5 Richtige	348 ×	5.133,60 €
+ 5	4 Richtige + SZ	2.053 ×	241,40 €
+ 6	4 Richtige	19.267 ×	61,00 €
+ 7	3 Richtige + SZ	41.153 ×	24,30 €
+ 8	3 Richtige	374.198 ×	12,60 €
+ 9	2 Richtige + SZ	314.351 ×	6,00 €
+
  */
 
 public class Main {
@@ -55,6 +67,10 @@ public class Main {
         System.out.println(Arrays.toString(winningLotto));
         int[] tryLotto = new int[6];
         long tries = 0, found;
+
+        double tipp = 1.70;
+        int gewin = 500000000;
+        System.out.println(gewin);
 
         do {
             found =0;

@@ -1,6 +1,5 @@
 package Lotto;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Lotto {
@@ -31,7 +30,6 @@ public class Lotto {
                 lottoticketsize++;
             }
         }while(lottoticketsize < 6);
-        //System.out.println(Arrays.toString(lottoticket));
         return lottoticket;
     }
 }
