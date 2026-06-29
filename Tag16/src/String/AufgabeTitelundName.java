@@ -22,6 +22,8 @@ public class AufgabeTitelundName {
     }
 
     public static String [] pruefeTitle(String string){
+
+
         String [] result = new String[2];
         for(int i = 0; i < string.length(); i++){
             if(string.charAt(i) == ' '){
