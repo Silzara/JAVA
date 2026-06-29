@@ -30,11 +30,10 @@ public class AufgabePLZcheck {
         // 5 Zeichen genau
         if(string.length() != 5 ){
             return false;
-
-        // Zeichen sind Ziffern
         }
+        // Zeichen sind Ziffern
         for(int i = 0; i < string.length(); i++){
-            if(string.charAt(i) < '0' || string.charAt(i) > '9'){
+            if(string.charAt(i) < 48 || string.charAt(i) > 57 ){ // 48 ist '0' || 57 ist '9'
                 return false;
             }
         }
