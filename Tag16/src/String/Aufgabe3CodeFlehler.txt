@@ -1,0 +1,46 @@
+Dieser Code enthält 3 Fehler. Finden, erklären Sie in eigenen Worten die Fehler und korrigieren Sie sie!
+
+public class Main
+
+{
+    public static void main(String[] args)
+	{
+        String name, teil;
+		int position;
+
+		name = "Max Mustermann";
+
+        if (name == "Max Mustermann") {
+            System.out.println("Treffer");
+        }
+
+        teil = name.substring(0, 20);
+        System.out.println(teil);
+
+        position = name.indexOf('z');
+
+        System.out.println("Z an Position: " + name.charAt(position));
+    }
+}
+
+
+	Fehler 1:
+	   if (name == "Max Mustermann") {
+                   System.out.println("Treffer");
+               }
+       ******************************************
+       if (name.equals("Max Mustermann")) {
+                   System.out.println("Treffer");
+               }
+
+    Fehler 2:
+       teil = name.substring(0, 20);
+       20 ist OutOfBoundsException
+       *****************************************
+       teil = name.substring(0, name.length());
+
+    Fehler 3:
+       position = name.indexOf('z');
+       'z' nicht im "Max Mustermann"
+       *****************************************
+       position = name.indexOf('M');
