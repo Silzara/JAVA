@@ -23,7 +23,6 @@ public class Main
     }
 }
 
-
 	Fehler 1:
 	   if (name == "Max Mustermann") {
                    System.out.println("Treffer");
