@@ -65,7 +65,7 @@ public class Main {
                         break;
                     }
                     case 3: {
-                        int summe = 0, i =1;
+                        int summe = 0, i = 1;
 
                         System.out.println("N eingeben:");
                         input = sc.nextInt();
